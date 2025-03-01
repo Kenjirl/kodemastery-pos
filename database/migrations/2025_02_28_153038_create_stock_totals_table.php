@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('stock_totals', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('product_id')->constrained()->cascadeOnDelete();
+            $table->integer('total_stock')->default(0); // Jumlah stok total yang dapat dipotong oleh transaksi
             $table->timestamps();
         });
     }
