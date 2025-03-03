@@ -13,11 +13,8 @@ return new class extends Migration
     {
         Schema::create('stock_opnames', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('stock_opname_id')->constrained()->cascadeOnDelete();
-            $table->foreignId('product_id')->constrained()->cascadeOnDelete();
-            $table->foreignId('stock_total_id')->constrained()->cascadeOnDelete();
-            $table->integer('physical_quantity');
-            $table->integer('quantity_difference');
+            $table->date('opname_date');
+            $table->enum('status', ['pending', 'completed'])->default('pending');
             $table->timestamps();
         });
     }

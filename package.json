@@ -12,10 +12,16 @@
         "vite": "^5.0"
     },
     "dependencies": {
-        "@inertiajs/react": "^1.0.15",
+        "@inertiajs/react": "2.0",
         "bootstrap": "^5.3.3",
         "react": "^18.3.1",
+        "react-barcode": "^1.5.3",
+        "react-data-table-component": "^7.6.2",
         "react-dom": "^18.3.1",
+        "react-loading-skeleton": "^3.5.0",
+        "react-qr-barcode-scanner": "^2.0.0",
+        "react-to-print": "^2.15.1",
+        "recharts": "^2.15.1",
         "sweetalert2": "^11.17.2"
     }
 }
